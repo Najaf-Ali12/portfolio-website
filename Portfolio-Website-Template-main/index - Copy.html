@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Najaf Ali Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project/certificate image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* Certificate specific styles for better image display */
+.certificate-img-container {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent cards */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Light background for placeholders */
+}
+
+.certificate-img-container .block-20 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Najaf Ali</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li> <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/large\ image.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Najaf Ali</span></h1>
+
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst',
+						'Freelancer',
+						'Always Learning'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Data Analyst</h2>
+						<p><a href="https://medium.com/@zoroaster786" class="btn btn-primary py-3 px-4" target="_blank">My blogs</a> 
+							<a href="https://github.com/Najaf-Ali12" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Portfolio-image.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Najaf Ali</span></p>
+										<p><span class="title-s">Work as: </span> <span>Freelancer Data Analyst</span></p>
+										<p><span class="title-s">Education: </span> <span>Enrolled in BS-AI</span></p>
+										<p><span class="title-s">Address: </span> <span>Dadu,Sindh,Pakistan</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Data-driven problem solver with a passion for turning raw information into actionable insights. My expertise spans Machine
+									Learning, Natural Languae Processing, Data Science and Data Analytics, allowing me to build predictive models,
+									extract meaning from text and visualize complex datasets in ways that drive business decisions.
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce and Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science(Continue)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Urdu, Sindhi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Tensorflow, XGBOOST, Streamlit, Presentation Skills and Report Writing</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Reading and Comedy</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="15">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href='https://www.linkedin.com/in/najaf-ali-alkhani-5127a42a0/' class="btn btn-primary py-3 px-3" target="_blank">Linkedin</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Currently working on Data Analysis and Data Science projects. Also worked on data science, machine learning and NLP projects.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Nov 2025-Dec 2025</span>
+						<h2>Intern Data Analytics</h2>
+						<span class="position">TechnoHacks Solutions Pvt.ltd</span>
+						<p class="mt-4">A private IT company based in Nashik, India, offering a range of services including software development, digital marketing, website development, and professional training. 
+							<ul>
+								<li>Collected, cleaned, and transformed diverse datasets (e.g., e-commerce sales, customer data) from sources like CSV files and SQL databases using MS Excel and Python (Pandas, NumPy)</li>
+								<li>Applied statistical methods and utilized libraries such as Matplotlib and Seaborn to identify key trends, patterns, and anomalies within datasets, informing subsequent analysis.</li>
+								<li>Developed comprehensive reports that translated technical data analysis into clear, compelling narratives, supporting data-driven decision-making processes.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">10th June-10th Sept 2024</span>
+						<h2>Intern Python Programming</h2>
+						<span class="position">Code Alpha</span>
+						<p class="mt-4">Code Alpha a software development company and a training platform that offers task-based internships to students for gaining hands-on experience in various tech fields.
+							<ul>
+								<li>Developed a fully functional Hangman Game utilizing core Python libraries.</li>
+								<li>Designed and built a Stock Portfolio Tracker application to help users manage and visualize their investments.</li>
+								<li>Created Task Automation Scripts to streamline repetitive daily operations efficiently.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2027</span>
+    					<h2>Bachelor of Science(Continue)</h2>
+    					<span class="position">Quaid-e-Awam University of Engineering, Science and technology, Nawabshah</span>
+    					<p class="mt-4">Department: Artificial Intelligence.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Higher Secondary School Certificate</h2>
+    					<span class="position">Govt Ustad Bukhari Government Degree College Dadu</span>
+    					<p class="mt-4">First Division.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://github.com/Najaf-Ali12" class="btn btn-primary py-4 px-5" target="_blank">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Science and Data Analytics projects on Excel, SQL, Python, Power BI, ML & NLP.</p>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+                <a href="https://github.com/Najaf-Ali12/Crop-Recommendation-System" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" target="_blank">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Crop Recommendation System using Machine Learning</h3>
+                    <p>Checked multiple models of Machine Learning and selected the best model for recommendation which was Random Forest.</p>
+                    <h5 class="heading"><a href="https://medium.com/@zoroaster786/building-a-smart-crop-recommendation-system-with-machine-learning-ee175675b15f" target="_blank">View Project Blog on Medium</a></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+                <a href="https://github.com/Najaf-Ali12/DL-Projects/tree/main/Predicting accident sovereignity" class="block-20 zoom-effect" style="background-image: url('images/accident intensity predictor.jfif');" target="_blank">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">UK Accident Intensity Prediction using ANN</h3>
+                    <p>The model will predict the intensity of accident based on input features. This model is trained on UK based road accident Dataset.</p>
+                    <h5 class="heading"><a href="https://medium.com/@zoroaster786/data-driven-defense-predicting-uk-road-accident-intensity-using-artificial-neural-networks-410c3d217ff4?postPublishedType=initial" target="_blank">View project Blog on Medium</a></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+                <a href="https://github.com/Najaf-Ali12/Powerbi-Projects/tree/main/Predicting accident sovereignity" class="block-20 zoom-effect" style="background-image: url('images/uk accidents.png');" target="_blank"></a>
+                <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">UK accidents Data Analysis</h3>
+                    <p>Aimed to identify the root causes of accidents in UK Road Accident dataset.Achieved through comprehensive data analysis and the creation of a Power BI dashboard</p>
+                    <h5 class="heading"><a href="https://medium.com/@zoroaster786/deconstructing-the-danger-a-data-driven-analysis-to-cut-uk-road-fatalities-9aa9af6bed76" target="_blank">View project Blog on Medium</a></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+                <a href="https://github.com/Najaf-Ali12/Data-Analytics-and-Data-Science-Projects/tree/main/Hotel Booking cancellation report" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpeg');" target="_blank">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Analyzing Hotel Booking cancellation</h3>
+                    <p>Analyzed the reasons why City Hotel and Resort Hotel have seen high cancellation rates. Final Results are provided as report.</p>
+                    <h5 class="heading"><a href="https://medium.com/@zoroaster786" target="_blank">View Project Blog on Medium</a></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+                <a href="https://github.com/Najaf-Ali12/DL-Projects/tree/main/Stroke prediction using Neural Networks" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" target="_blank">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Stroke Prediction using Neural Networks</h3>
+                    <p>Developed a Neural network model which will classify based on the symptons that whether the person is victim of Stroke or not.</p>
+                    <h5 class="heading"><a href="https://medium.com/@zoroaster786/the-digital-pulse-predicting-stroke-risk-with-artificial-neural-networks-3c1392b6a814" target="_blank">View Project Blog on Medium</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section class="ftco-section" id="certificates-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+              <h1 class="big big-2">Certificates</h1>
+              <h2 class="mb-4">Certifications & Courses</h2>
+              <p>Showcasing acquired skills and knowledge through various professional certifications and completed online courses.</p>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                  <a  class="certificate-img-container block-20 zoom-effect" style="background-image: url('images/data\ analytics.jpeg');">
+                  </a>
+                  <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Google Data Analytics Professional Certificate</h3>
+                    <p>Completed the comprehensive 8-course program covering data analysis, SQL, R, and data visualization tools.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                  <a  class="certificate-img-container block-20 zoom-effect" style="background-image: url('images/advanced\ data\ analytics.jpeg');">
+                  </a>
+                  <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Google Advanced Data Analytics professional Certificate</h3>
+                    <p>Completed Advanced data analytics course covering Basic of Machine Learning and data science and learnt to use python for data analysis.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry">
+                  <a class="certificate-img-container block-20 zoom-effect" style="background-image: url('images/uniathena\ excel\ certificate.jpeg');"></a>
+                  <div class="text mt-3 float-right d-block">
+                    <h3 class="heading">Essentials of MS Excel, Formulas and Functions</h3>
+                    <p>Mastered the use of complex formulas and functions to efficiently cleanse, transform, and derive analytical insights from raw datasets.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of Salemani Chai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Najaf-Ali12" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dadu, Sindh, Pakistan</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101"></a>+923121348757</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p>najafalialkhani@gmail.com</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+	            <p><a href="https://github.com/Najaf-Ali12/Resume" target="_blank">Resume</a></p>
+				<p>Click Resume</p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/najaf-ali-alkhani-5127a42a0/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61553834850598" target="_blank"><span class="icon-facebook"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
